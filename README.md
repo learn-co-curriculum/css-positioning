@@ -20,16 +20,16 @@ these properties work!
 
 ## Special Positioning
 
-Float positioning gives us the flexibility to make grid systems to accommodate
-most layouts. There are however situations where other positioning techniques
-can be called upon to do more specialized kinds of positioning. I think of these
-positioning techniques as super powers that are appropriate to use in certain
-situations. Let's say for example you wanted to adjust a radio button element
-top drop just a few pixels lower relative to where it used to be, or perhaps you
-want to position certain elements in relationship to the entire browser window,
-or perhaps you want an element such as a nav bar to stay fixed in place even
-when we scroll. These are all good scenarios to use special positioning. We can
-use the `position` property to change an element's position value.
+We can use Grid or Flexbox to accommodate various layouts. But sometimes we may
+need more control over element positioning both within and outside the bounds of
+the layout. I think of these positioning techniques as super powers that are
+appropriate to use in certain situations. Let's say for example you wanted to
+adjust a radio button element top drop just a few pixels lower relative to where
+it used to be, or perhaps you want to position certain elements in relationship
+to the entire browser window, or perhaps you want an element such as a nav bar
+to stay fixed in place even when we scroll. These are all good scenarios to use
+special positioning. We can use the `position` property to change an element's
+position value.
 
 ### Static
 
@@ -70,9 +70,9 @@ to a new position.
 #### HTML
 
 ```html
-<input type="radio" name="size" value="small"> small<br>
-<input type="radio" name="size" value="medium"> medium<br>
-<input type="radio" name="size" value="large"> large
+<input type="radio" name="size" value="small" /> small<br />
+<input type="radio" name="size" value="medium" /> medium<br />
+<input type="radio" name="size" value="large" /> large
 ```
 
 #### CSS
@@ -115,9 +115,7 @@ icons we must set their width accordingly.
 
 ```html
 <nav>...icons here...</nav>
-<div class="wrapper">
-  ...
-</div>
+<div class="wrapper">...</div>
 ```
 
 #### CSS
@@ -170,15 +168,15 @@ This would mean 100px from the left of the `#jukebox` parent.
 }
 
 .play {
-    position: absolute;
-    top: 20px;
-    left: 100px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
 }
 
 .pause {
-    position: absolute;
-    top: 20px;
-    left: 120px;
+  position: absolute;
+  top: 20px;
+  left: 120px;
 }
 ```
 
@@ -202,9 +200,7 @@ place and have content scroll underneath it.
   <a>...</a>
   <a>...</a>
 </nav>
-<div class="wrapper">
-  ...
-</div>
+<div class="wrapper">...</div>
 ```
 
 #### CSS
@@ -238,19 +234,18 @@ numbers of z-index.
 #### HTML
 
 ```html
-<div class="a"> a </div>
-<div class="b"> b </div>
-<div class="c"> c </div>
+<div class="a">a</div>
+<div class="b">b</div>
+<div class="c">c</div>
 ```
 
 #### CSS
 
 ```css
-
 div {
   width: 50px;
   height: 50px;
-  background: rgba(255,0,0,.25);
+  background: rgba(255, 0, 0, 0.25);
 }
 
 .a {
